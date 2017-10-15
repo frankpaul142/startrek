@@ -26,9 +26,14 @@ beforeEach(function () {
       return {
         compare: function (actual,expected) {
           var reactor = actual;
-
+          var capacities=[];
+          reactor.injectors.forEach(function(injector) {
+            capacities.push(injector.getCapacity());
+            
+          });
+          var total=capacities.reduce(function(a, b){ return a + b; });
           return {
-            pass: reactor.speed===expected
+            pass: total===(expected*3) 
           }
         }
       };
