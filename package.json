@@ -1,0 +1,16 @@
+{
+  "name": "startrek",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^2.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "Franklin Paula",
+  "license": "ISC",
+  "description": "StarTrek Test"
+}
